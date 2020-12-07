@@ -33,11 +33,11 @@ func (a *Announcer) Open() {
 	}
 }
 
-func (d *Announcer) Close() {
+func (a *Announcer) Close() {
 	a.pc.Close()
 }
 
-func (d *Announcer) Do() {
+func (a *Announcer) Do() {
 	var err error
 	for {
 		select {
